@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proj5.- Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="images/calendar-favicon/favicon.ico">
+
+  <!-- DEPENDENCIES -->
+  <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" />
+
+  <!-- FONT-AWESOME DEPENDENCIES -->
+  <link rel="stylesheet" type="text/css" href="dependencies/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="dependencies/font-awesome/css/font-awesome.min.css">
+
+  <!-- SELECT2 DEPENDENCIES -->
+  <link rel="stylesheet" type="text/css" href="dependencies/select2/css/select2.css">
+  <link rel="stylesheet" type="text/css" href="dependencies/select2/css/select2.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/swipeStyles.css" />
+
+</head>
+<body>
+<div class="container-fluid container-class" ng-app="proj5" ng-controller="pageLayoutController">
+  <div class="row">
+    <div class=" col-sm-2 menubar a-hover">
+    	<div class="side-nav">
+	      	<div class="myTask">
+            <p class="caps"><b>MY TASKS </b><span class="count"> 9</span></p>
+          </div>
+          <div class="channel">
+              <div class="projects">
+                <p class="channel-space"><b>PROJECTS</b></p>
+                <p class="col"># Socialweaver</p>
+                <p># Cleartrip Seo</p>
+                <p># Cleartrip white</p>
+                <p># Rover heath</p>
+                <p># Zatalyst</p>
+                <p># Freshcorno</p>
+                <p># Beatroute</p>
+              </div>
+            </div>
+          <div class="dirMsg">
+            <p><b>MEMBERS</b></p >
+            </div>
+              <div class="members">
+                <div class="online">
+                 <li><span>Senthil</span></li>
+                  <li><span>Sathish</span></li>
+                <li><span>Dharshinipriya</span></li>
+                <li><span style="color: #000">Sriram</span></li>
+                <div class="offline">
+                  <li><span>Sachin</span></li>
+                </div>
+                <li><span>Arjun</span></li>
+                <li><span>Bhuvana</span></li>
+                <li><span>Tamil</span></li>
+                <li><span>Suhirtha</span></li>
+                </div>
+            
+                <div class="offline">
+                  <li><span>Subhash</span></li>
+                </div>
+            </div>
+              
+
+    	</div>     
+	</div>
+
+    <div class="col-sm-6 projects-content">
+    	<div class=" project-title-col6">
+        # SOCIALWEAVE
+      </div>
+        <div>
+          <div class="messages">
+            <ul  class="list-unstyled">
+              <li>
+                <div>
+                  <p class="left"><input type="checkbox" name="task"></p>
+                  <p class=" right"><strong>2 hr</strong><br>Start Customer UI</p>
+                </div>
+              </li>
+
+              <div class="clearfix"></div>
+
+              <li>
+                <div>
+                  <p class="left"><input type="checkbox" name="task"></p>
+                  <p class=" right"><strong>3 hr</strong><br>Fix social logging</p>
+                </div>
+              </li>
+
+              <div class="clearfix"></div>
+              <li>
+                <div>
+                  <p class="left"><input type="checkbox" name="task"></p>
+                  <p class="right"> <strong>2 hr</strong> <br>Do server setup</p>
+                </div>
+              </li>
+
+               <div class="clearfix"></div>
+
+              <li>
+                <div>
+                  <p class="left"><input type="checkbox" name="task"></p>
+                  <p class="right"> <strong>1 hr</strong> <br>Deployment scripts updation</p>
+                </div>
+              </li>
+
+                <div class="clearfix"></div>
+
+              <li>
+                <div>
+                  <p class="left"><input type="checkbox" name="task"></p>
+                  <p class="right"> <strong>3 hr</strong> <br>Start Dashboard UI</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="input-text">
+          <form ng-submit="addMsg()">
+              <div class="addMessage">
+              <div class="inner-addon right-addon">
+              <i class="fa fa-paperclip fa-2x"></i>
+              <i class="fa fa-smile-o fa-2x"></i>
+              <input mentio mentio-typed-text="typedTerm" mentio-items="mem | filter:label:typedTerm" autocomplete="off" type="text" class="form-control msg-input" placeholder="Type a message..." ng-model="inputMsg">
+            </div>
+            </div>
+          </form>
+        </div>
+
+      	</div>
+    
+
+    <div class=" col-sm-4 tasks-content">
+      <div class="project-title-col4">
+        <span class="bg" style=" margin-top: 1px; background-image: url('images/bg.gif')"><strong>4/10</strong></span>
+      </div>
+      <div class=" col-sm-12 tasks">
+        <div>
+          <!-- <div class="queueList">Queue</div> -->
+          <div class="lineBg" style="background-image: url('images/now.gif')">
+            <b>Queue</b>
+          </div>
+        </div>
+          <div class="todo" ng-repeat="x in todoQueue">
+            <ul>
+                <div class="bullet"><li></li></div>
+                <div class="text-task">
+                <span>&nbsp;{{x.project}}
+                <div class="task-space">{{x.base}}</div>
+                </span>
+                </div>
+            </ul>
+          </div>
+        </div>
+        <div class="task-input">
+          <form ng-submit="add()">
+            <div class="input-group addTask">
+                <input type="text" class="form-control form-focus" placeholder="Add a new task to # Socialweaver" ng-model="addTask">
+                <span class="input-group-btn">
+                <button class="btn submitBtn" type="button" id="addButton" ng-click="add()">
+                <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+                </button>
+                </span>
+              </div>
+          </form>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+
+  <!-- SCRIPTS -->
+
+  <!-- DEPENDENCIES -->
+  <script type="text/javascript" src="dependencies/jquery/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="dependencies/angular-1.5.11/angular.min.js"></script>
+
+  <!-- SELECT2 DEPENDENCIES -->
+  <script type="text/javascript" src="dependencies/select2/js/select2.js"></script>
+  <script type="text/javascript" src="dependencies/select2/js/select2.min.js"></script>
+
+<!--MENTIO DEPENDENCIES-->
+  <script type="text/javascript" src="dependencies/mentio/mentio.js"></script>
+
+ <script type="text/javascript" src="js/swipe.js"></script>
+
+</body>
+</html>

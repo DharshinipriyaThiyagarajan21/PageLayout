@@ -1,0 +1,497 @@
+.container-class
+{
+	margin:0;
+	padding: 0;
+	border:0;
+	/*width: 1535px;*/
+	font-size: 15 px;
+}
+
+.row
+{
+	margin: 0;
+}
+
+
+/*col-sm-2*/
+
+.menubar
+{
+	height: 100vh;
+	/*width: 205px;*/
+	background:#fffff5;
+	color: #878D98;
+	/*float: left;*/
+	padding:40px 0px 0px 28px;
+	letter-spacing: 1px;
+	font-family:GothamRounded-Book;
+	box-shadow: inset -2px -6px 20px 0px rgba(212, 206, 212, 0.3);
+}
+
+.projects p
+{
+	margin-right: 50px;
+}
+
+.col
+{
+	color: #fff;
+    background: #71CBE1; 
+}
+
+.myTask
+{
+	margin-bottom: 30px;
+}
+
+
+.count
+{
+    display: block;
+    height: 23px;
+    width: 23px;
+    line-height: 23px;
+
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+
+    background-color:#f05b5b;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    float: right;
+    margin-right: 20px;
+}
+
+.channels
+{
+	padding: 10px;
+}
+
+.dirMsg
+{
+	margin-top: 30px;
+}
+
+.members
+{
+	padding-left:15px;
+}
+
+.online li
+{
+	color:#98e698;
+	list-style-type: disc;
+	padding-top: 10px;
+}
+
+.online li span
+{
+	color: #878D98;
+}
+
+.offline li
+{
+	color:#B3B3B3;
+	list-style-type: disc;
+	padding-top: 10px;
+}
+
+.offline li span
+{
+	color: #878D98;
+}
+
+/*.a-hover p:hover
+{
+	color: #fff;
+    background: #71CBE1; 
+}*/
+/*col-sm-2*/
+
+.messages img
+{
+	width: 70px;
+	height: 70px;
+	border-radius: 25px;
+}
+
+.projects-content
+{
+	height: 100vh;
+	/*width: 790.5px;
+	float: left;*/
+	position: relative;
+	background:#fff;
+	/*box-shadow: inset 10px 0px 10px 0px rgba(242, 237, 242, 0.3);*/
+	box-shadow: inset -2px -6px 20px 0px rgba(212, 206, 212, 0.3);
+	font-family:GothamRounded-Medium,GothamRounded-Book;
+	z-index: 0;
+}
+
+.input-text
+{
+	margin-right: 20px;
+	border-top: 3px solid #d7d7d2;
+	padding-left: 20px;
+	margin: 0px 0px 4px 20px;
+	background:#fff;
+	bottom: 0;
+	left: 0;
+	position: relative;
+}
+
+.input-text input
+{
+	width: 80%;
+	height: 70px;
+	border:none;
+	float: left;
+}
+
+.input-text button
+{
+	
+	height: 70px;
+	border:none;
+	border-top: 3px solid #d7d7d2;
+	padding-left: 20px;
+	margin: 0px 0px 4px 20px;
+	background:#fff;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	margin-top: 127px;
+}
+
+
+.msg-input:focus
+{
+	box-shadow: none;
+	border:none;
+	border-top: 3px solid #d7d7d2;
+
+}
+
+.messages
+{
+	/*min-height:630px;*/
+	margin-top: 90px;
+	min-height: 600px;
+	max-height: 680px; 
+	overflow-y: auto;
+}
+
+
+/*.project-title-col6
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 46px;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+  padding: 0px 0px 15px 20px;
+  border-bottom: 4px solid #fcd07e;
+}*/
+
+
+.project-title-col6
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 69px;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+  padding: 20px 0px 15px 40px;
+  border-bottom: 4px solid #fcd07e;
+  font-size: 16px;
+}
+
+
+
+.tasks-content
+{
+	height: 100vh;
+	/*width:539.5px;*/
+	background:#fffff5;
+	/*float: left; */
+	/*box-shadow: inset 10px 0px 10px 0px rgba(242, 237, 242, 0.3);*/
+	z-index: 1;
+	position: relative;
+	font-family:GothamRounded-Medium,GothamRounded-Book;
+}
+
+
+.tasks
+{
+	/*min-height:577px;*/
+	margin-top: 90px;
+	min-height: 600px;
+	max-height: 649px; 
+	overflow-y: auto;
+}
+
+.submitBtn
+ {
+  border: 2px solid #d7d7d2;
+  background:#fff;
+ }
+
+ .task-input button
+ {
+ 	width:70px;
+  	height: 70px;
+ }
+
+ .task-input input
+ {
+ 	height: 70px;
+	padding-left: 20px;
+	background:#fff;
+ }
+
+.task-input
+{
+	width: 87.5%;
+	bottom: 0;
+	left: 0;
+	position: relative;
+	margin: 2px 0px 10px 35px;
+
+}
+
+ .form-focus:focus
+ {
+  border:2px solid #d7d7d2;
+  box-shadow:none;
+ }
+
+ .todo
+ {
+ 	margin: 5px 0px 15px 20px;
+ 	border: 1px  #d7d7d2;
+ 	width: 90%;
+ 	height: 80px;
+ 	background: #fff;
+ 	box-shadow: 0px 0px 3px 8px rgba(222,218,222,0.25);
+ 	border-radius: 10px;
+ 	padding: 20px 0px 0px 25px;
+}
+
+.todo ul li
+{
+	color: orange;
+	font-size: 150%;
+	list-style-type: disc;
+}
+
+.todo ul li span
+{
+	color: #878D98;
+	font-size: 14px;
+}
+
+.todo li
+{
+	list-style:#ffa500;
+}
+
+.now-class
+{
+	margin-top: 10px;
+	color: #878D98;
+}
+
+.project-title-col4
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 69px;
+  width: 100%;
+  background: transparent;
+  z-index: 999;
+  border-bottom: 4px solid #fcd07e;
+}
+
+.bg
+{
+	float: right;
+	/*background-image: url('bg.png');*/
+	display: block;
+	color: #878D98;
+	font-size: 16PX;
+	padding-left: 85px;
+	padding-top: 60px;
+	width:150px;
+	height: 100px;
+}
+
+.lineBg
+{
+	font-size: 16px;
+	width:96%;
+	height: 45px;
+	margin-top: 20px; 
+	background-image: url('images/now.gif');
+	display:block;
+	margin-bottom:25px;
+	padding-top: 20px;
+	padding-left:15px;
+	color: #C3C6CB;
+}
+
+.row
+{
+	margin: 0;
+	padding: 0;
+}
+
+.messages li
+{
+	padding: 15px;
+}
+
+/*.space
+{
+	padding-left: 75px;
+}*/
+
+.first-space
+{
+	padding-top: 0;
+}
+.color
+{
+	color: #488ECB;
+}
+
+.task-space
+{
+	padding-left:5px;
+}
+
+.now-class
+{
+	margin-top: 10px;
+	color: #878D98;
+	padding-left: 20px;
+}
+
+.right
+{
+	width: 90%;
+	float: right;
+	padding-right: 300px;
+	padding-top: 15px;
+}
+
+.left
+{
+	width:  10%;
+	float: left;
+	padding-top: 25px;
+	padding-left: 20px;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+
+
+.inner-addon {
+  position: relative;
+}
+
+
+.inner-addon .fa {
+  padding:20px 15px 10px 10px;
+  pointer-events: none;
+  float: right;
+  color: #d2d2c7;
+}
+
+/* align glyph */
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+/*.left-addon input  { padding-left:  30px; }*/
+.right-addon input { padding-right: 30px; }
+
+.bullet
+{
+	content: '\2022';
+	color: #fcd07e;
+	font-size: 120%;
+	float: left;
+}
+
+.channel-space
+{
+	margin-bottom: 15px;
+}
+
+*FONTS*/
+@font-face {
+    font-family: 'GothamRounded-Medium';
+    src: url('fonts/Gotham Rounded Medium/GothamRounded-Medium.woff') format("woff");
+}
+
+@font-face {
+    font-family: 'GothamRounded-Book';
+    src: url('fonts/Gotham Rounded Medium/GothamRounded-Book.woff') format("woff");
+}
+ 
+
+::-webkit-input-placeholder {
+   font-style: italic;
+   font-size: 16px;
+}
+:-moz-placeholder {
+   font-style: italic; 
+   font-size: 16px; 
+}
+::-moz-placeholder {
+   font-style: italic;  
+   font-size: 16px;
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+   font-size: 16px;
+}
+
+.color-msg
+{
+	color: #000;
+}
+
+/*
+.menubar p:hover
+{
+	color: #fff;
+    background: #71CBE1; 
+}
+
+.menubar li:hover
+{
+	color: #fff;
+    background: #71CBE1; 
+}
+*/
+
+.task-space
+{
+	color: #c6c6c1;
+}
+
+
+.checkedBox:checked + .checkedLabel {
+        text-decoration: line-through;
+        color: blue
+        }
